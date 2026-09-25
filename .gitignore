@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Data directory contents (keep structure, exclude generated CSVs)
+data/raw/*.csv
+!data/raw/.gitkeep
+data/cleaned/*.csv
+!data/cleaned/.gitkeep
+data/rejected/*.csv
+!data/rejected/.gitkeep
+
+# Environment variables
+.env
+
+# Docker & local storage
+.localstack/
+postgres_data/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
